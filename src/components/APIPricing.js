@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { IoSunnyOutline } from "react-icons/io5";
+import "./APIPricing.css";
 export default function APIPricing() {
-  const [toggle,setToggle] =useState(false)
+  const [toggle, setToggle] = useState(false);
   return (
     <div className="" style={{ backgroundColor: "#0f172a" }}>
-     
       <div
         className="Header text-white h-[70px] p-5 font-bold"
         style={{
@@ -14,16 +14,10 @@ export default function APIPricing() {
         }}
       >
         Book Generator API
-       
-       
-       
       </div>
-     
-       
-      
-      
+
       <div className="flex flex-col">
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark ">
           <div className="container-fluid">
             <button
               className="navbar-toggler"
@@ -39,46 +33,49 @@ export default function APIPricing() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav mx-auto py-2">
                 {/* Centering the navbar items */}
-                <li className="nav-item mx-2">
+                <li className="nav-item mx-2 ">
                   <a
-                    className="nav-link active text-white text-xl"
+                    className="nav-link  text-white "
                     aria-current="page"
                     href="#overview"
+                    style={{"fontSize":"1rem"}}
                   >
                     OVERVIEW
                   </a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link text-white" href="#authentication">
+                  <a className="nav-link text-white " href="#authentication"  style={{"fontSize":"1rem"}}>
                     AUTHENTICATION
                   </a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link text-white" href="#endpoints">
+                  <a className="nav-link text-white " href="#endpoints" style={{"fontSize":"1rem"}}>
                     ENDPOINTS
                   </a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link text-white" href="#tutorials">
+                  <a className="nav-link text-white " href="#tutorials" style={{"fontSize":"1rem"}}>
                     TUTORIALS
                   </a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link text-white" href="#codeexamples">
+                  <a className="nav-link text-white " href="#codeexamples" style={{"fontSize":"1rem"}}>
                     CODE EXAMPLES
                   </a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link text-white" href="#pricing">
+                  <a className="nav-link text-white " href="#pricing" style={{"fontSize":"1rem"}}>
                     PRICING
                   </a>
                 </li>
-                <li className="nav-item mx-2 text-end" onClick={()=>setToggle(!toggle)}>
-                  <a className="nav-link text-white" >
-                  <IoSunnyOutline style={{ fontSize: '25px' }} />
+                <li
+                  className="nav-item mx-2 text-end"
+                  onClick={() => setToggle(!toggle)}
+                >
+                  <a className="nav-link text-white">
+                    <IoSunnyOutline style={{ fontSize: "25px" }} />
                   </a>
                 </li>
-               
               </ul>
             </div>
           </div>
@@ -159,13 +156,13 @@ export default function APIPricing() {
             >
               Generate Book
             </h5>
-            <div className="d-flex align-items-start px-3 gap-2">
-              <button type="button" className="btn btn-small btn-info m-1">
+            <div className="d-flex align-items-start px-3 gap-2 py-0">
+              <button type="button" className="btn btn-small btn-info m-1 py-0 fw-bold">
                 POST
               </button>
               <button
                 type="button"
-                className="btn btn-lg mb-2"
+                className="btn btn-lg mb-2 py-1 pb-1 text-white"
                 style={{ backgroundColor: "#6366f1" }}
               >
                 /api/generate-book
@@ -244,7 +241,6 @@ export default function APIPricing() {
                   >
                     Response
                   </h4>
-                 
                 </div>
               </div>
             </div>
@@ -364,7 +360,6 @@ export default function APIPricing() {
                       backgroundColor: "#6366f1",
                       fontFamily: "Arial, sans-serif",
                       fontWeight: "normal",
-                     
                     }}
                   >
                     <tr>
