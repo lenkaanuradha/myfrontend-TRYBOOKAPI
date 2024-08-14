@@ -162,8 +162,8 @@ export default function APIPricing() {
               </button>
               <button
                 type="button"
-                className="btn btn-lg mb-2 py-1 pb-1 text-white"
-                style={{ backgroundColor: "#6366f1" }}
+                className="btn btn-lg mb-2 py-2 fw-bold text-white"
+                style={{ backgroundColor: "#6366f1" ,fontSize:"1rem"}}
               >
                 /api/generate-book
               </button>
@@ -177,19 +177,19 @@ export default function APIPricing() {
             <div className="d-flex justify-content-center">
               <div className="overflow-auto rounded-3 border border-white w-100 mx-3">
                 <table className="table text-white mb-0 w-100">
-                  <thead style={{ backgroundColor: "#6366f1" }}>
+                  <tbody style={{ backgroundColor: "#6366f1" }}>
                     <tr>
-                      <th scope="col" className="text-start p-3">
+                      <td  className="text-start p-3 fw-bolder" style={{"fontSize":"0.8rem"}}>
                         PARAMETER
-                      </th>
-                      <th scope="col" className="text-start p-3">
+                      </td>
+                      <td  className="text-start p-3 fw-bolder" style={{"fontSize":"0.8rem"}}>
                         TYPE
-                      </th>
-                      <th scope="col" className="text-start p-3">
+                      </td>
+                      <td  className="text-start p-3 fw-bolder" style={{"fontSize":"0.8rem"}}>
                         DESCRIPTION
-                      </th>
+                      </td>
                     </tr>
-                  </thead>
+                  </tbody>
                   <tbody>
                     <tr>
                       <td className="text-info text-start p-3">api</td>
@@ -363,13 +363,13 @@ export default function APIPricing() {
                     }}
                   >
                     <tr>
-                      <th scope="col" className="text-start p-3">
+                      <th scope="col" className="text-start p-3 fw-bolder" style={{"fontSize":"0.8rem"}}>
                         API
                       </th>
-                      <th scope="col" className="text-start p-3">
+                      <th scope="col" className="text-start p-3 fw-bolder" style={{"fontSize":"0.8rem"}}>
                         MODEL
                       </th>
-                      <th scope="col" className="text-start p-3">
+                      <th scope="col" className="text-start p-3 fw-bolder" style={{"fontSize":"0.9rem"}}>
                         Price per 1K tokens
                       </th>
                     </tr>
