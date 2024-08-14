@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoSunnyOutline } from "react-icons/io5";
 import "./APIPricing.css";
 export default function APIPricing() {
-  const [toggle, setToggle] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   return (
     <div className="" style={{ backgroundColor: "#0f172a" }}>
       <div
@@ -28,7 +28,7 @@ export default function APIPricing() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon "></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav mx-auto py-2">
@@ -70,7 +70,7 @@ export default function APIPricing() {
                 </li>
                 <li
                   className="nav-item mx-2 text-end"
-                  onClick={() => setToggle(!toggle)}
+                  onClick={() => setIsDarkMode(!isDarkMode)}
                 >
                   <a className="nav-link text-white">
                     <IoSunnyOutline style={{ fontSize: "25px" }} />
@@ -125,7 +125,7 @@ export default function APIPricing() {
               To generate an API key, use the button below:
             </p>
             <div className="text-start px-3">
-              <button type="button" className="btn btn-info">
+              <button type="button" className="btn btn-info fw-bold">
                 Generate API Key
               </button>
             </div>
@@ -176,7 +176,7 @@ export default function APIPricing() {
             </h4>
             <div className="d-flex justify-content-center">
               <div className="overflow-auto rounded-3 border border-white w-100 mx-3">
-                <table className="table text-white mb-0 w-100">
+                <table className="table text-white mb-0 w-100 ">
                   <tbody style={{ backgroundColor: "#6366f1" }}>
                     <tr>
                       <td  className="text-start p-3 fw-bolder" style={{"fontSize":"0.8rem"}}>
